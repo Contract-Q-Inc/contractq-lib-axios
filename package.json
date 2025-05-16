@@ -34,6 +34,7 @@
   "type": "module",
   "types": "index.d.ts",
   "scripts": {
+     "prepare": "npm install && npm run build",
     "test": "npm run test:eslint && npm run test:mocha && npm run test:karma && npm run test:dtslint && npm run test:exports",
     "test:eslint": "node bin/ssl_hotfix.js eslint lib/**/*.js",
     "test:dtslint": "dtslint --localTs node_modules/typescript/lib",
